@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+        <link rel="stylesheet" href="cool.css">
+        <title>Document</title>
+    </head>
+    <body>
+      
+		
+          <form action="#" method="post" enctype="multipart/form-data">
+            <div class="main_form">
+                <p>Contact</p>
+                <input tabindex="1" type="email" class="email_input" required minlength="5" maxlength="25">
+            </div>
+            <div class="main_form_tel">
+                <input tabindex="2"  type="tel" class="tel_input" required minlength="5" maxlength="12">
+            </div>
+            <div class="shipping">
+                <p>Shipping adress</p>
+                <input type="text" name="First Name" value="First Name">
+                <input type="text" name="Last Name" value="Last Name">
+
+                <div>
+                    <input type="text" value="adress">
+                    <input type="text" value="city">
+                </div>
+                <script src="country-state-select.js"></script>
+                <select id="country"></select>
+State:
+<select id="state"></select>
+<br/>
+
+            </div>
+
+            <div>
+                <button type="submit">send</button>
+                <button type="reset">back</button>
+            </div>
+          </form>
+        
+          <script language="javascript">
+            populateCountries("country", "state");
+            
+</script>    
+       
+       <script src="country-state-select.js"></script>
+    </body> 
+</html>
